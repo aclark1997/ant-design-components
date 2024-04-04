@@ -6,6 +6,7 @@ import MySteps from "./components/MySteps.jsx";
 import MyTour from "./components/MyTour.jsx";
 import React from "react";
 import {Empty, Image} from "antd";
+import { Button, Flex } from 'antd';
 
 export default function App() {
             
@@ -76,7 +77,13 @@ export default function App() {
             <p>It's useful to consider when writing your own component might be a better choice!</p>
             <Cards />
 
-
+		<Flex gap="small" wrap="wrap">
+    <Button type="primary">Primary Button</Button>
+    <Button>Default Button</Button>
+    <Button type="dashed">Dashed Button</Button>
+    <Button type="text">Text Button</Button>
+    <Button type="link">Link Button</Button>
+  </Flex>
         </div>
     );
 }
